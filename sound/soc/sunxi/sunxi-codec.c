@@ -482,7 +482,7 @@ static const struct snd_kcontrol_new sunxibc_dac[] = {
 	CODEC_SINGLE("Master Playback Volume", SUNXI_DAC_ACTL,0,0x3f,0),
 	CODEC_SINGLE("Playback Switch", SUNXI_DAC_ACTL,6,1,0),//全局输出开关
 	CODEC_SINGLE("Fm Volume",SUNXI_DAC_ACTL,23,7,0),//Fm 音量
-	CODEC_SINGLE("Line Volume",SUNXI_DAC_ACTL,26,1,0),//Line音量
+	CODEC_SINGLE("Line Capture Volume",SUNXI_DAC_ACTL,26,1,0),//Line音量
 	CODEC_SINGLE("FmL Switch",SUNXI_DAC_ACTL,17,1,0),//Fm左开关
 	CODEC_SINGLE("FmR Switch",SUNXI_DAC_ACTL,16,1,0),//Fm右开关
 	CODEC_SINGLE("LineL Switch",SUNXI_DAC_ACTL,19,1,0),//Line左开关
