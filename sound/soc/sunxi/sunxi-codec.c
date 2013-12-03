@@ -482,7 +482,7 @@ static const struct snd_kcontrol_new sunxibc_dac[] = {
 	CODEC_SINGLE("Master Playback Volume", SUNXI_DAC_ACTL,0,0x3f,0),
 	CODEC_SINGLE("Playback Switch", SUNXI_DAC_ACTL,6,1,0),//全局输出开关
 	CODEC_SINGLE("Fm Volume",SUNXI_DAC_ACTL,23,7,0),//Fm 音量
-	CODEC_SINGLE("Line Capture Volume",SUNXI_DAC_ACTL,26,1,0),//Line音量
+	CODEC_SINGLE("Line Volume",SUNXI_DAC_ACTL,26,1,0),//Line音量
 	CODEC_SINGLE("FmL Switch",SUNXI_DAC_ACTL,17,1,0),//Fm左开关
 	CODEC_SINGLE("FmR Switch",SUNXI_DAC_ACTL,16,1,0),//Fm右开关
 	CODEC_SINGLE("LineL Switch",SUNXI_DAC_ACTL,19,1,0),//Line左开关
@@ -514,7 +514,7 @@ static const struct snd_kcontrol_new codec_adc_controls[] = {
 	CODEC_SINGLE("Right Capture Mute",SUNXI_ADC_ACTL,31,1,0),
 	CODEC_SINGLE("Left Capture Mute",SUNXI_ADC_ACTL,30,1,0),
 	CODEC_SINGLE("Capture Volume",SUNXI_ADC_ACTL,20,7,0),//录音音量
-	CODEC_SINGLE("Line Volume",SUNXI_ADC_ACTL,13,7,0),
+	CODEC_SINGLE("Line Capture Volume",SUNXI_ADC_ACTL,13,7,0),
 	CODEC_SINGLE("MicL Volume",SUNXI_ADC_ACTL,25,3,0),//mic左音量
 	CODEC_SINGLE("MicR Volume",SUNXI_ADC_ACTL,23,3,0),//mic右音量
 	CODEC_SINGLE("Mic2 Boost",SUNXI_ADC_ACTL,29,1,0),
